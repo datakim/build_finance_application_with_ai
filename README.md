@@ -145,6 +145,7 @@ printed listings need a fix to run:
 | 284 | 10.10 | `balanced_accuracy_score` isn't imported | [chapter10](chapter10/README.md) |
 | 331 | 12.11 | `plt` isn't imported | [chapter12](chapter12/README.md) |
 | 346 | 13.1 | Last line indented 6 spaces | [chapter13](chapter13/README.md) |
+| 354 | 13.6 | `dna_matrix` is never built | [chapter13](chapter13/README.md) |
 | 360 | 13.8 | User and content vectors have different lengths | [chapter13](chapter13/README.md) |
 
 One result also changes: the Evidently drift report in figures 6.9 and 6.10 shows 11 of 20 columns drifting because
