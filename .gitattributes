@@ -1,3 +1,10 @@
+# Large data files are stored with Git LFS. Run `git lfs install` once before cloning
+# (appendix A.5); otherwise these files arrive as small pointer files.
 *.pkl filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
-*.ipynb filter=lfs diff=lfs merge=lfs -text
+
+# Notebooks and small CSVs are plain Git files, so they open on GitHub, in Colab and in
+# "Download ZIP" archives even without Git LFS.
+chapter04/vintage_data.csv !filter !diff !merge !text
+chapter07/sample_fraud_data.csv !filter !diff !merge !text
+chapter13/etf_metadata_mart_20260115.csv !filter !diff !merge !text

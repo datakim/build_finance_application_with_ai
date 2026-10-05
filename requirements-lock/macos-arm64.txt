@@ -1,0 +1,807 @@
+# Fully resolved lock for Python 3.12 on macos-arm64, generated from ../requirements.txt with uv pip compile (2026-10-05).
+# Install with: pip install -r requirements-lock/macos-arm64.txt
+# torch==2.12.1 publishes macOS wheels for Apple Silicon on macOS 14+ only.
+# Command: uv pip compile requirements.txt --python-version 3.12 --python-platform aarch64-apple-darwin
+absl-py==2.5.0
+    # via
+    #   keras
+    #   ortools
+    #   tensorflow
+accelerate==1.15.0
+    # via peft
+aiohappyeyeballs==2.7.1
+    # via aiohttp
+aiohttp==3.14.3
+    # via
+    #   fsspec
+    #   kubernetes
+    #   torch-geometric
+aiosignal==1.4.0
+    # via aiohttp
+annotated-doc==0.0.5
+    # via typer
+annotated-types==0.8.0
+    # via pydantic
+anyio==4.15.1
+    # via
+    #   httpx
+    #   litestar
+    #   openai
+    #   watchfiles
+appdirs==1.4.4
+    # via iterative-telemetry
+asttokens==3.0.2
+    # via stack-data
+astunparse==1.6.3
+    # via tensorflow
+attrs==26.1.0
+    # via
+    #   aiohttp
+    #   jsonschema
+    #   referencing
+autograd==1.9.1
+    # via
+    #   autograd-gamma
+    #   lifelines
+autograd-gamma==0.5.0
+    # via lifelines
+bcrypt==5.0.0
+    # via chromadb
+beautifulsoup4==4.15.0
+    # via yfinance
+build==1.6.1
+    # via chromadb
+certifi==2026.7.22
+    # via
+    #   curl-cffi
+    #   evidently
+    #   httpcore
+    #   httpx
+    #   kubernetes
+    #   requests
+cffi==2.1.1
+    # via
+    #   clarabel
+    #   cryptography
+    #   curl-cffi
+charset-normalizer==3.5.2
+    # via requests
+chromadb==1.5.9
+    # via -r requirements.txt
+clarabel==0.11.1
+    # via cvxpy
+click==8.5.0
+    # via
+    #   huggingface-hub
+    #   litestar
+    #   nltk
+    #   rich-click
+    #   uvicorn
+cloudpickle==3.1.2
+    # via
+    #   joblib
+    #   shap
+contourpy==1.4.0
+    # via matplotlib
+cryptography==50.0.2
+    # via evidently
+curl-cffi==0.16.3
+    # via yfinance
+cvxpy==1.9.3
+    # via ropwr
+cycler==0.12.1
+    # via matplotlib
+datasets==5.0.0
+    # via -r requirements.txt
+decorator==5.3.1
+    # via ipython
+defusedxml==0.7.1
+    # via nltk
+deprecation==2.1.0
+    # via evidently
+dill==0.4.1
+    # via
+    #   datasets
+    #   multiprocess
+distro==1.9.0
+    # via
+    #   iterative-telemetry
+    #   openai
+durationpy==0.11
+    # via kubernetes
+dynaconf==3.3.5
+    # via evidently
+evidently==0.4.40
+    # via -r requirements.txt
+executing==2.2.1
+    # via stack-data
+faker==40.40.0
+    # via polyfactory
+feedparser==6.0.12
+    # via -r requirements.txt
+filelock==4.0.11
+    # via
+    #   datasets
+    #   huggingface-hub
+    #   iterative-telemetry
+    #   torch
+flatbuffers==25.12.19
+    # via
+    #   onnxruntime
+    #   tensorflow
+fonttools==4.66.1
+    # via matplotlib
+formulaic==1.2.2
+    # via
+    #   lifelines
+    #   statsmodels
+fredapi==0.5.2
+    # via -r requirements.txt
+frozenlist==1.8.0
+    # via
+    #   aiohttp
+    #   aiosignal
+fsspec==2026.4.0
+    # via
+    #   datasets
+    #   evidently
+    #   huggingface-hub
+    #   torch
+    #   torch-geometric
+gast==0.7.0
+    # via tensorflow
+google-pasta==0.2.0
+    # via tensorflow
+googleapis-common-protos==1.75.5
+    # via opentelemetry-exporter-otlp-proto-grpc
+grpcio==1.84.0
+    # via
+    #   chromadb
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   tensorflow
+h11==0.16.0
+    # via
+    #   httpcore
+    #   uvicorn
+h5py==3.14.0
+    # via
+    #   keras
+    #   tensorflow
+hf-xet==1.6.0
+    # via huggingface-hub
+highspy==1.15.1
+    # via cvxpy
+httpcore==1.0.9
+    # via httpx
+httptools==0.8.0
+    # via uvicorn
+httpx==0.28.1
+    # via
+    #   chromadb
+    #   datasets
+    #   huggingface-hub
+    #   litestar
+    #   openai
+huggingface-hub==1.33.0
+    # via
+    #   accelerate
+    #   datasets
+    #   peft
+    #   sentence-transformers
+    #   tokenizers
+    #   transformers
+idna==3.20
+    # via
+    #   anyio
+    #   httpx
+    #   requests
+    #   yarl
+imageio==2.38.0
+    # via scikit-image
+imbalanced-learn==0.14.2
+    # via -r requirements.txt
+immutabledict==4.3.1
+    # via ortools
+importlib-resources==7.1.0
+    # via chromadb
+interface-meta==2.0.1
+    # via formulaic
+ipython==9.15.0
+    # via -r requirements.txt
+ipython-pygments-lexers==1.1.1
+    # via ipython
+iterative-telemetry==0.0.10
+    # via evidently
+jedi==0.20.0
+    # via ipython
+jinja2==3.1.6
+    # via
+    #   osqp
+    #   torch
+    #   torch-geometric
+jiter==0.17.0
+    # via openai
+joblib==1.6.0
+    # via
+    #   imbalanced-learn
+    #   nltk
+    #   osqp
+    #   scikit-learn
+jsonschema==4.26.0
+    # via chromadb
+jsonschema-specifications==2025.9.1
+    # via jsonschema
+keras==3.15.1
+    # via tensorflow
+kiwisolver==1.5.1
+    # via matplotlib
+kubernetes==36.0.3
+    # via chromadb
+lazy-loader==0.6
+    # via scikit-image
+libclang==18.1.1
+    # via tensorflow
+lifelines==0.30.3
+    # via -r requirements.txt
+lightgbm==4.6.0
+    # via -r requirements.txt
+lime==0.2.0.1
+    # via -r requirements.txt
+litestar==2.24.0
+    # via evidently
+litestar-htmx==0.5.0
+    # via litestar
+llvmlite==0.50.0
+    # via
+    #   numba
+    #   shap
+markdown-it-py==4.2.0
+    # via rich
+markupsafe==3.0.4
+    # via jinja2
+matplotlib==3.11.0
+    # via
+    #   -r requirements.txt
+    #   lifelines
+    #   lime
+    #   optbinning
+    #   seaborn
+matplotlib-inline==0.2.2
+    # via ipython
+mdurl==0.1.2
+    # via markdown-it-py
+ml-dtypes==0.6.0
+    # via
+    #   keras
+    #   onnx
+    #   tensorflow
+mmh3==5.3.1
+    # via chromadb
+mpmath==1.3.0
+    # via sympy
+msgspec==0.22.0
+    # via litestar
+multidict==6.9.1
+    # via
+    #   aiohttp
+    #   litestar
+    #   yarl
+multipart==2.0.1
+    # via litestar
+multiprocess==0.70.19
+    # via datasets
+multitasking==0.0.13
+    # via yfinance
+mypy-extensions==1.1.0
+    # via typing-inspect
+namex==0.1.0
+    # via keras
+narwhals==2.26.0
+    # via
+    #   formulaic
+    #   plotly
+    #   scikit-learn
+networkx==3.6.1
+    # via
+    #   -r requirements.txt
+    #   python-louvain
+    #   scikit-image
+    #   torch
+newsapi-python==0.2.7
+    # via -r requirements.txt
+nltk==3.10.3
+    # via evidently
+numba==0.68.0
+    # via shap
+numpy==2.0.2
+    # via
+    #   -r requirements.txt
+    #   accelerate
+    #   autograd
+    #   chromadb
+    #   clarabel
+    #   contourpy
+    #   cvxpy
+    #   datasets
+    #   evidently
+    #   formulaic
+    #   h5py
+    #   highspy
+    #   imageio
+    #   imbalanced-learn
+    #   keras
+    #   lifelines
+    #   lightgbm
+    #   lime
+    #   matplotlib
+    #   ml-dtypes
+    #   numba
+    #   onnx
+    #   onnxruntime
+    #   optbinning
+    #   ortools
+    #   osqp
+    #   pandas
+    #   patsy
+    #   peft
+    #   python-louvain
+    #   qdldl
+    #   ropwr
+    #   scikit-image
+    #   scikit-learn
+    #   scipy
+    #   scs
+    #   seaborn
+    #   sentence-transformers
+    #   shap
+    #   sparsediffpy
+    #   statsmodels
+    #   tensorflow
+    #   tifffile
+    #   torch-geometric
+    #   transformers
+    #   xgboost
+    #   yfinance
+oauthlib==4.0.0
+    # via requests-oauthlib
+onnx==1.22.0
+    # via -r requirements.txt
+onnxruntime==1.27.0
+    # via
+    #   -r requirements.txt
+    #   chromadb
+openai==2.44.0
+    # via -r requirements.txt
+opentelemetry-api==1.45.0
+    # via
+    #   chromadb
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+opentelemetry-exporter-otlp-common==0.66b0
+    # via opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-exporter-otlp-proto-common==1.45.0
+    # via opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-exporter-otlp-proto-grpc==1.45.0
+    # via chromadb
+opentelemetry-proto==1.45.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-sdk==1.45.0
+    # via
+    #   chromadb
+    #   opentelemetry-exporter-otlp-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-semantic-conventions==0.66b0
+    # via opentelemetry-sdk
+opt-einsum==3.4.0
+    # via tensorflow
+optbinning==0.21.0
+    # via -r requirements.txt
+optree==0.20.0
+    # via keras
+orjson==3.12.0
+    # via chromadb
+ortools==9.10.4067
+    # via optbinning
+osqp==1.1.3
+    # via cvxpy
+overrides==7.7.0
+    # via chromadb
+packaging==26.3
+    # via
+    #   accelerate
+    #   build
+    #   datasets
+    #   deprecation
+    #   huggingface-hub
+    #   keras
+    #   lazy-loader
+    #   matplotlib
+    #   onnxruntime
+    #   patsy
+    #   peft
+    #   plotly
+    #   scikit-image
+    #   shap
+    #   statsmodels
+    #   tensorflow
+    #   transformers
+    #   wheel
+pandas==2.3.3
+    # via
+    #   -r requirements.txt
+    #   datasets
+    #   evidently
+    #   formulaic
+    #   fredapi
+    #   lifelines
+    #   optbinning
+    #   ortools
+    #   seaborn
+    #   shap
+    #   statsmodels
+    #   yfinance
+parso==0.8.7
+    # via jedi
+patsy==1.0.3
+    # via statsmodels
+peewee==4.5.2
+    # via yfinance
+peft==0.19.1
+    # via -r requirements.txt
+pexpect==4.9.0
+    # via ipython
+pillow==12.3.0
+    # via
+    #   imageio
+    #   matplotlib
+    #   scikit-image
+platformdirs==4.12.3
+    # via yfinance
+plotly==6.8.0
+    # via
+    #   -r requirements.txt
+    #   evidently
+polyfactory==3.3.0
+    # via litestar
+prompt-toolkit==3.0.53
+    # via ipython
+propcache==0.5.4
+    # via
+    #   aiohttp
+    #   yarl
+protobuf==7.36.2
+    # via
+    #   googleapis-common-protos
+    #   onnx
+    #   onnxruntime
+    #   opentelemetry-proto
+    #   ortools
+    #   tensorflow
+    #   yfinance
+psutil==7.2.2
+    # via
+    #   accelerate
+    #   ipython
+    #   peft
+    #   torch-geometric
+ptyprocess==0.7.0
+    # via pexpect
+pure-eval==0.2.4
+    # via stack-data
+pyarrow==25.0.1
+    # via
+    #   datasets
+    #   pandas
+pybase64==1.5.1
+    # via chromadb
+pycparser==3.0
+    # via cffi
+pydantic==2.13.4
+    # via
+    #   -r requirements.txt
+    #   chromadb
+    #   evidently
+    #   openai
+    #   pydantic-settings
+pydantic-core==2.46.4
+    # via pydantic
+pydantic-settings==2.15.0
+    # via chromadb
+pygments==2.21.0
+    # via
+    #   ipython
+    #   ipython-pygments-lexers
+    #   rich
+pyparsing==3.3.3
+    # via
+    #   matplotlib
+    #   torch-geometric
+pypika==0.51.1
+    # via chromadb
+pyproject-hooks==1.3.3
+    # via build
+python-dateutil==2.9.0.post0
+    # via
+    #   kubernetes
+    #   matplotlib
+    #   pandas
+python-dotenv==1.2.2
+    # via
+    #   -r requirements.txt
+    #   pydantic-settings
+    #   uvicorn
+python-louvain==0.16
+    # via -r requirements.txt
+pytz==2026.5
+    # via
+    #   pandas
+    #   yfinance
+pyyaml==6.0.3
+    # via
+    #   accelerate
+    #   chromadb
+    #   datasets
+    #   evidently
+    #   huggingface-hub
+    #   kubernetes
+    #   litestar
+    #   peft
+    #   transformers
+    #   uvicorn
+qdldl==0.1.9.post1
+    # via cvxpy
+referencing==0.37.0
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+regex==2026.9.29
+    # via
+    #   nltk
+    #   transformers
+requests==2.34.2
+    # via
+    #   -r requirements.txt
+    #   datasets
+    #   evidently
+    #   iterative-telemetry
+    #   kubernetes
+    #   newsapi-python
+    #   requests-oauthlib
+    #   tensorflow
+    #   torch-geometric
+    #   yfinance
+requests-oauthlib==2.0.0
+    # via kubernetes
+rich==15.0.0
+    # via
+    #   chromadb
+    #   evidently
+    #   keras
+    #   litestar
+    #   rich-click
+    #   typer
+rich-click==1.9.9
+    # via litestar
+ropwr==1.2.0
+    # via optbinning
+rpds-py==2026.9.1
+    # via
+    #   jsonschema
+    #   referencing
+safetensors==0.8.0
+    # via
+    #   accelerate
+    #   peft
+    #   transformers
+scikit-image==0.26.0
+    # via lime
+scikit-learn==1.9.0
+    # via
+    #   -r requirements.txt
+    #   evidently
+    #   imbalanced-learn
+    #   lime
+    #   optbinning
+    #   ropwr
+    #   sentence-transformers
+    #   shap
+    #   sklearn-compat
+scipy==1.17.1
+    # via
+    #   -r requirements.txt
+    #   autograd-gamma
+    #   clarabel
+    #   cvxpy
+    #   evidently
+    #   formulaic
+    #   imbalanced-learn
+    #   lifelines
+    #   lightgbm
+    #   lime
+    #   optbinning
+    #   osqp
+    #   qdldl
+    #   ropwr
+    #   scikit-image
+    #   scikit-learn
+    #   scs
+    #   sentence-transformers
+    #   shap
+    #   statsmodels
+    #   xgboost
+scs==3.3.1
+    # via cvxpy
+seaborn==0.13.2
+    # via -r requirements.txt
+sentence-transformers==5.6.0
+    # via -r requirements.txt
+setuptools==81.0.0
+    # via
+    #   osqp
+    #   tensorflow
+    #   torch
+sgmllib3k==1.0.0
+    # via feedparser
+shap==0.51.0
+    # via -r requirements.txt
+shellingham==1.5.4
+    # via typer
+six==1.17.0
+    # via
+    #   astunparse
+    #   google-pasta
+    #   kubernetes
+    #   python-dateutil
+    #   tensorflow
+sklearn-compat==0.1.6
+    # via imbalanced-learn
+slicer==0.0.8
+    # via shap
+sniffio==1.3.1
+    # via
+    #   litestar
+    #   openai
+soupsieve==2.10
+    # via beautifulsoup4
+sparsediffpy==0.6.1
+    # via cvxpy
+stack-data==0.6.3
+    # via ipython
+statsmodels==0.15.0
+    # via evidently
+sympy==1.14.0
+    # via torch
+tenacity==9.1.4
+    # via chromadb
+tensorflow==2.21.0
+    # via -r requirements.txt
+termcolor==3.3.0
+    # via tensorflow
+threadpoolctl==3.7.0
+    # via
+    #   imbalanced-learn
+    #   scikit-learn
+tifffile==2026.4.11
+    # via scikit-image
+tokenizers==0.22.2
+    # via
+    #   chromadb
+    #   transformers
+torch==2.12.1
+    # via
+    #   -r requirements.txt
+    #   accelerate
+    #   peft
+    #   sentence-transformers
+torch-geometric==2.8.0
+    # via -r requirements.txt
+tqdm==4.68.3
+    # via
+    #   -r requirements.txt
+    #   chromadb
+    #   datasets
+    #   huggingface-hub
+    #   lime
+    #   nltk
+    #   openai
+    #   peft
+    #   sentence-transformers
+    #   shap
+    #   torch-geometric
+    #   transformers
+traitlets==5.16.1
+    # via
+    #   ipython
+    #   matplotlib-inline
+transformers==5.13.0
+    # via
+    #   -r requirements.txt
+    #   peft
+    #   sentence-transformers
+typer==0.27.2
+    # via
+    #   chromadb
+    #   evidently
+    #   transformers
+typing-extensions==4.16.0
+    # via
+    #   aiohttp
+    #   aiosignal
+    #   anyio
+    #   beautifulsoup4
+    #   chromadb
+    #   formulaic
+    #   grpcio
+    #   huggingface-hub
+    #   litestar
+    #   onnx
+    #   openai
+    #   opentelemetry-api
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+    #   optree
+    #   polyfactory
+    #   pydantic
+    #   pydantic-core
+    #   referencing
+    #   sentence-transformers
+    #   shap
+    #   tensorflow
+    #   torch
+    #   typing-inspect
+    #   typing-inspection
+typing-inspect==0.9.0
+    # via evidently
+typing-inspection==0.4.4
+    # via
+    #   pydantic
+    #   pydantic-settings
+tzdata==2026.5
+    # via pandas
+ujson==6.0.0
+    # via evidently
+urllib3==2.8.0
+    # via
+    #   evidently
+    #   kubernetes
+    #   requests
+uuid6==2025.0.1
+    # via evidently
+uvicorn==0.54.0
+    # via
+    #   chromadb
+    #   evidently
+uvloop==0.23.0
+    # via uvicorn
+watchdog==6.0.0
+    # via evidently
+watchfiles==1.3.0
+    # via uvicorn
+wcwidth==0.9.2
+    # via prompt-toolkit
+websocket-client==1.9.2
+    # via kubernetes
+websockets==17.2
+    # via
+    #   uvicorn
+    #   yfinance
+wheel==0.48.0
+    # via astunparse
+wrapt==2.5.0
+    # via
+    #   formulaic
+    #   tensorflow
+xgboost==3.2.0
+    # via -r requirements.txt
+xxhash==4.0.1
+    # via
+    #   datasets
+    #   torch-geometric
+yarl==1.25.1
+    # via aiohttp
+yfinance==1.5.1
+    # via -r requirements.txt

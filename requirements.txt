@@ -1,0 +1,59 @@
+# Financial AI in Practice: listing A.1 (appendix A.3), the requirements.txt file.
+# Install with:  pip install -r requirements.txt   (Python 3.12)
+# Fully resolved locks for macOS (Apple Silicon), Linux and Windows are in requirements-lock/.
+
+# --- Core data & ML (all chapters) ---
+numpy==2.0.2            # kept < 2.1 for Evidently (see note below)
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.0
+matplotlib==3.11.0
+seaborn==0.13.2
+plotly==6.8.0
+tqdm==4.68.3
+ipython==9.15.0
+requests==2.34.2
+python-dotenv==1.2.2
+pydantic==2.13.4
+
+# --- Part 2: Credit risk (ch. 4-6) ---
+xgboost==3.2.0
+optbinning==0.21.0
+lifelines==0.30.3
+lime==0.2.0.1
+shap==0.51.0
+evidently==0.4.40      # 0.4.x matches the ch6 drift-report code; needs numpy < 2.1
+
+# --- Part 3: Fraud detection (ch. 7-9) ---
+lightgbm==4.6.0
+imbalanced-learn==0.14.2
+tensorflow==2.21.0
+torch==2.12.1
+torch-geometric==2.8.0
+networkx==3.6.1
+python-louvain==0.16
+
+# --- Part 4: Investment (ch. 10-12) ---
+yfinance==1.5.1
+fredapi==0.5.2
+feedparser==6.0.12
+newsapi-python==0.2.7
+chromadb==1.5.9
+openai==2.44.0
+
+# --- Part 5: Personalization & agents (ch. 13-14) ---
+sentence-transformers==5.6.0
+
+# --- Chapter 3: fine-tuning demo ---
+transformers==5.13.0
+peft==0.19.1
+datasets==5.0.0
+
+# --- Optional model export ---
+onnx==1.22.0
+onnxruntime==1.27.0
+
+# Not installed by this file (see the notes after listing A.1 and the top-level README):
+#   TA-Lib for chapter 10 needs its C library first (brew install ta-lib), then pip install TA-Lib.
+#   apache-airflow==3.1.7 for chapters 5 and 13 goes in a separate virtual environment.
+#   JupyterLab or Notebook to open the notebooks: pip install jupyterlab

@@ -1,1 +1,25 @@
-chapter8/creditcard.csv
+# Secrets: copy .env.example to .env and keep your keys there
+.env
+
+# Virtual environments
+finai_env/
+.venv/
+venv/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Files the notebooks extract or write when you run them
+chapter06/combined_drift_report.html
+chapter08/creditcard.csv
+chapter08/best_autoencoder_model_ch8.keras
+chapter11/*.parquet
+chapter11/chroma_db/
+chapter12/ch12_backtest_results.png
