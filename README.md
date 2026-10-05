@@ -1,5 +1,7 @@
 # Financial AI in Practice: A Playbook for Credit, Fraud, and Investment Systems
 
+<a href="https://www.manning.com/books/financial-ai-in-practice"><img src="images/book-cover.jpg" alt="Cover of Financial AI in Practice: A Playbook for Credit, Fraud, and Investment Systems by Taehun Kim" width="240" align="right"></a>
+
 Companion code for [*Financial AI in Practice: A Playbook for Credit, Fraud, and Investment Systems*](https://www.manning.com/books/financial-ai-in-practice) by Taehun Kim (Manning). You can also read the book on
 [liveBook](https://livebook.manning.com/book/financial-ai-in-practice/welcome).
 
